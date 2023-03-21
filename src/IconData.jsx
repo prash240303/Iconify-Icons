@@ -1,16 +1,10 @@
 export default [
-
-    {
-
-        // medical
+    { // medical
         name: "calender",
         category: "Medical",
         tags: ["planner", "dates"]
     },
-
-
-    //school
-    {
+    { //school
         name: "doc",
         category: "School",
         tags: ["document", "work"]
@@ -20,7 +14,6 @@ export default [
         name: "mic",
         category: "School",
         tags: ["audio", 'singer', 'singing', 'mp4']
-
     },
     {
         name: "pdf",
@@ -28,9 +21,6 @@ export default [
         tags: ["print", 'document']
 
     },
-
-
-
     //communication 
     {
         name: "add mail",
@@ -60,7 +50,6 @@ export default [
         name: "bookmark mail",
         category: "communication",
         tags: ["print", 'document']
-
     },
     {
         name: "bookmark message",
@@ -282,25 +271,20 @@ export default [
         name: "pdf",
         category: "School",
         tags: ["print", 'document']
-
     },
     {
         name: "pdf",
         category: "School",
         tags: ["print", 'document']
-
     },
     {
         name: "pdf",
         category: "School",
         tags: ["print", 'document']
-
     },
     {
         name: "pdf",
         category: "School",
         tags: ["print", 'document']
-
     },
-
 ]
