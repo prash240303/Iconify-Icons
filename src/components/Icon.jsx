@@ -17,7 +17,10 @@ export default function Icon({ iconName, category, size }) {
     else {
         sizeVariant = "large"
     }
-    console.log(iconName, category, sizeVariant)
+
+
+    const [Code, setCode] = useState()
+    // console.log(iconName, category, sizeVariant)
     // const [images, setImages] = useState({})
     // function importAll(r) {
 
@@ -28,11 +31,44 @@ export default function Icon({ iconName, category, size }) {
     // }
 
     // useEffect(() => {
-
     //     listReactFiles('/icons').then(files => console.log(files))
     //     // console.log(allImages)
     //     // setImages(allImages)
     // }, [])
+
+    // function copyContent() {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.onreadystatechange = function () {
+    //         if (xhr.readyState === 4 && xhr.status === 200) {
+    //             var svgCode = xhr.responseText;
+    //             console.log(svgCode); // display the SVG code in the console
+    //             console.log("i am clicked")
+    //             navigator.clipboard.write(svgCode)
+    //         }
+    //     };
+
+
+
+
+    //     xhr.open("GET", `./Icons/${category}/${iconName}_${sizeVariant}.svg`);
+    //     xhr.send();
+
+    //     // setCode({ svgCode });
+    //     // console.log(Code);
+
+    // }
+    function copyContent() {
+        fetch(`./Icons/${category}/${iconName}_${sizeVariant}.svg`)
+            .then((response) => response.text())
+            .then((code) => {
+
+                console.log("writing inside response", code)
+                navigator.clipboard.writeText(code)
+                console.log(Code)
+            })
+    }
+
+
 
     function handleDownload(event) {
         const a = document.createElement('a');
@@ -53,17 +89,28 @@ export default function Icon({ iconName, category, size }) {
     }
 
     return (
-        <div className="col-sm-1  icon-container">
+        <div className="  icon-container">
 
             <div className="icon-container-inner">
                 <img src={`./Icons/${category}/${iconName}_${sizeVariant}.svg`} alt="" className="display-icon" />
 
-                <div class="icon-label-container">
+                <div className="icon-label-container">
+
+
                     <div className="icon-name">{toTitleCase(iconName)}</div>
-                    <button className="download--btn" onClick={handleDownload}>
-                        <img src="./public/Assets/Download.svg" alt="" />
-                        Download
-                    </button>
+
+
+                    <div className="icontiles">
+                        <button className="download--btn" onClick={handleDownload}>
+                            <img src="./public/Assets/Download.svg" alt="" />
+                            SVG
+                        </button>
+
+                        <button className="download--btn" onClick={copyContent}>
+                            <img src="./public/Assets/copy.svg" alt="" />
+                            Copy
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -71,6 +118,4 @@ export default function Icon({ iconName, category, size }) {
     )
 }
 
-//fetch src
-// json . srtingyf bblob to text
-// 
+
