@@ -3,6 +3,8 @@ body {
   padding: 0;
 }
 
+
+
 .settings-control {
   margin: 2rem;
   display: flex;
@@ -10,6 +12,10 @@ body {
   justify-content: flex-start;
   gap: 20px;
 }
+
+
+
+
 /*SEARCH BAR STYLE */
 .search-bar {
   display: flex;
@@ -27,6 +33,9 @@ body {
   overflow: hidden;
 }
 
+
+
+
 .search-input {
   display: flex;
   font-style: normal;
@@ -38,10 +47,18 @@ body {
   flex-grow: 0;
 }
 
+
+
+
+
 .search-input input {
   border: none;
   outline: none;
+  background: none;
 }
+
+
+
 
 /*size switch toggle css
 */
@@ -116,18 +133,26 @@ input:checked + .radio-tile .logo path {
   stroke: #1a91ff !important;
 }
 
+
+
+
+
+
+
+
+
 /* ICON CONTAINER STYLING */
 
 .icon {
-  gap: 1rem;
-  margin: 10px;
+  gap: 0.7rem;
+  margin-left:3rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .icon-container {
-  width: 139px;
-  height: 140.35px;
+  width: 10rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -135,7 +160,7 @@ input:checked + .radio-tile .logo path {
 
 .icon-container:hover {
   border: 2px solid #f2f2f5;
-  border-radius: 18px;
+  border-radius: 1.5rem;
 }
 
 .icon-container-inner {
@@ -181,7 +206,7 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 3px;
+  gap: 0.5rem;
 }
 
 .download--btn {
@@ -230,3 +255,6 @@ input:checked + .radio-tile .logo path {
   display: flex;
   cursor: pointer;
 }
+
+
+
