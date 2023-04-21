@@ -1,8 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,500&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Karla:ital,wght@0,400;0,700;1,500&display=swap");
+
 body {
   margin: 0;
   padding: 0;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Karla", sans-serif;
 }
 
+:root {
+  --Outlinegrey: #dddee2;
+  --OutlineLightBlue: #a9d3fa;
+  --OutlineGreyBlue: #e8f4ff;
+  --OutlineBlue: #1a91ff;
+}
+
+.border-radius-50 {
+  border-radius: 50px;
+}
+.border-radius-12 {
+  border-radius: 12px;
+}
+.border-radius-18 {
+  border-radius: 18px;
+}
 .settings-control {
   margin: 2rem;
   display: flex;
@@ -22,8 +44,7 @@ body {
   width: 15rem;
   margin: 0.3rem;
   background: #ffffff;
-  border-radius: 25px;
-  border: 1px solid #cccdcd;
+  outline: 0.1rem solid var(--Outlinegrey);
   overflow: hidden;
 }
 
@@ -32,7 +53,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
-  color: #cccdcd;
+  color: var(--Outlinegrey);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -41,6 +62,9 @@ body {
 .search-input input {
   border: none;
   outline: none;
+}
+.search-bar img {
+  width: 24px;
 }
 
 /*size switch toggle css
@@ -54,18 +78,28 @@ body {
   align-items: center;
 }
 
+.toggle-container :hover {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
 .radio-tile-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: start;
-  border: 2px solid #f1f1f1;
+  align-items: flex-start;
+  outline: 0.1rem solid var(--Outlinegrey);
+  transition: 0.1s ease-out;
+}
+.toggle-container:hover {
+  cursor: pointer;
   border-radius: 50px;
+  outline: 0.1rem solid var(--OutlineGreyBlue);
 }
 
 .input-container {
   position: relative;
-  height: 2.75rem;
+  height: 2.5rem;
   width: 7rem;
   margin: 0.3rem;
 }
@@ -97,7 +131,7 @@ body {
 
 .input-container label {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 input:checked + .radio-tile {
@@ -110,32 +144,46 @@ input:checked + .radio-tile {
 
 input:checked + .radio-tile ion-icon,
 input:checked + .radio-tile label {
-  color: #1a91ff;
+  color: var(--OutlineBlue);
 }
 input:checked + .radio-tile .logo path {
-  stroke: #1a91ff !important;
+  stroke: var(--OutlineBlue) !important;
 }
+
+/*media queries */
 
 /* ICON CONTAINER STYLING */
 
 .icon {
-  gap: 1rem;
-  margin: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   align-items: center;
   justify-content: center;
 }
 
+.innerIcon-container {
+  gap: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  align-items: center;
+  justify-content: flex-start;
+}
 .icon-container {
-  width: 139px;
-  height: 140.35px;
+  width: 9rem;
+  /* border-radius: 18px; */
+  border: 0.1rem solid transparent;
+  border-radius: 18px;
+  height: 9rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  transition: all 0.25s;
 }
 
 .icon-container:hover {
-  border: 2px solid #f2f2f5;
-  border-radius: 18px;
+  /* transition: 3s ease-in; */
+  border-color: var(--Outlinegrey);
 }
 
 .icon-container-inner {
@@ -143,7 +191,6 @@ input:checked + .radio-tile .logo path {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
 }
 
 .display-icon {
@@ -167,13 +214,11 @@ input:checked + .radio-tile .logo path {
   width: 121.46px;
   /* overflow: hidden; */
   text-align: center;
-  /* background: #e8f4ff; */
   border-radius: 12px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #1a91ff;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: var(--OutlineBlue);
 }
 
 .icontiles {
@@ -181,7 +226,8 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 3px;
+  gap: 5px;
+  border: none;
 }
 
 .download--btn {
@@ -189,21 +235,51 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6px 10px;
-  gap: 5px;
+  padding: 4px 7px;
+  gap: 3px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  color: #1a91ff;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4aa6fd;
+  appearance: none;
+  border: none;
   background: #e8f4ff;
   border-radius: 12px;
-  border: none;
 }
 
-.download--btn:hover {
-  outline: 2px solid#1a91ff;
+.copy--btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 7px;
+  gap: 3px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4aa6fd;
+  appearance: none;
+  border: none;
+  background: #e8f4ff;
+  border-radius: 12px;
 }
-.download--btn img {
+
+.download--btn,
+.copy--btn:hover {
+  transition: 0.01s ease-in;
+  color: var(--OutlineBlue);
+}
+
+.download--btn:hover .download-icon path {
+  stroke: var(--OutlineBlue);
+}
+
+.copy--btn:hover .copy-icon path {
+  stroke: var(--OutlineBlue);
+}
+
+.download-icon,
+.copy-icon {
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -211,15 +287,19 @@ input:checked + .radio-tile .logo path {
   right: 12.5%;
   top: 12.5%;
   bottom: 12.5%;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 .download--btn {
   display: none;
 }
+.copy--btn {
+  display: none;
+}
 
-.download--btn:active {
+.download--btn,
+.copy--btn:active {
   outline: none;
 }
 
@@ -229,4 +309,36 @@ input:checked + .radio-tile .logo path {
 .icon-container:hover .download--btn {
   display: flex;
   cursor: pointer;
+}
+.icon-container:hover .copy--btn {
+  display: flex;
+  cursor: pointer;
+}
+
+/* category container styling */
+
+.dropdown-categories select {
+  font-size: 1rem;
+  padding: 0.7rem 3rem 0.7rem 1.5rem;
+  outline: 0.1rem solid var(--Outlinegrey);
+  border-radius: 50px;
+  appearance: none;
+  height: 3rem;
+
+  font-weight: 500;
+  color: #3b3b3b;
+  border: none;
+}
+
+.dropdown-categories select:hover {
+  outline: 0.1rem solid var(--OutlineGreyBlue);
+  transition: 0.2s ease-in;
+}
+
+/* style for custom select list */
+.dropdown-categories select option {
+  background: #ffffff;
+  color: #3b3b3b;
+  font-size: 1rem;
+  font-weight: 400;
 }

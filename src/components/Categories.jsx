@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
-export default function Categories({ cat }) {
-    function handlecategoryChange(event) {
-        cat = event.target.value
-    }
+import React from "react";
+export default function Categories({ handlecategory }) {
+
     return (
-        <div>
-            <select id="" onChange={handlecategoryChange}>
-                <option value="All">All</option>
-                <option value="Communication">Communication</option>
-                <option value="School">School</option>
+        <div className="dropdown-categories">
+            <span class="custom-arrow"></span>
+            <select>
+                <option value="">All Icons</option>
+                <option value="">Communication</option>
+                <option value="">Office</option>
+                <option value="">Education</option>
+                <option value="">Medical</option>
             </select>
         </div>
     )

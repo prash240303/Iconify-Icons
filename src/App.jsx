@@ -3,8 +3,8 @@ import "./App.css";
 import IconData from "./IconData";
 import Icon from "./components/Icon";
 import Switchtoggle from "./components/SwitchToggle";
-
-
+import Categories from "./components/Categories";
+import StyleToggle from "./components/StyleToggle";
 export default function App() {
   const [size, setSize] = React.useState("3");
   const [category, setCategory] = React.useState("All");
@@ -32,6 +32,13 @@ export default function App() {
   useEffect(() => {
     setQueryData(IconData.filter(filterBySearch));
   }, [search]);
+
+  const [style, setStyle] = React.useState("3");
+  useEffect(() => {
+    console.log("style is changed");
+    console.log("the new style : " + style);
+  }, [style]);
+
   //  const queryData = IconData.filter(filterBySearch)
   const filteredData = queryData.filter(filterByCategory);
   const Icons = filteredData.map((item, index) => {
@@ -41,13 +48,14 @@ export default function App() {
         iconName={item.name}
         category={item.category}
         size={size}
+        iconStyle={style}
       />
     );
   });
 
   function handleSizeChange(event) {
-    console.log("size is changed")
-    console.log("the new size : " + size)
+    console.log("size is changed");
+    console.log("the new size : " + size);
     setSize(event.target.value);
   }
 
@@ -60,20 +68,18 @@ export default function App() {
     setSearch(event.target.value);
   }
 
+  function handleStyleChange(event) {
+    setStyle(event.target.value);
+  }
 
   return (
     <div className="main-parent">
       <div className="settings-control">
-        <select id="" onChange={handlecategoryChange}>
-          <option value="All">All</option>
-          <option value="Communication">Communication</option>
-          <option value="School">School</option>
-        </select>
-
+        <Categories handlecategory={handlecategoryChange} />
         <Switchtoggle handleSize={handleSizeChange} sizeValue={size} />
-
-        <div className="search-bar">
-          <img src="./public/Assets/search.svg" />
+        {/* <StyleToggle handleStyle={handleStyleChange} styleValue={style} /> */}
+        <div className="search-bar border-radius-50">
+          <img src="./Assets/search.svg" />
           <div className="search-input">
             <input
               type="text"
@@ -84,10 +90,10 @@ export default function App() {
               onChange={handleSearchQuery}
             />
           </div>
-
         </div>
       </div>
-      <div className="row icon">{Icons}</div>
+      <div className=" icon">
+        <div className="row innerIcon-container"> {Icons}</div></div>
     </div>
   );
 }
