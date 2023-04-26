@@ -13,7 +13,8 @@ body {
   --Outlinegrey: #dddee2;
   --OutlineLightBlue: #a9d3fa;
   --OutlineGreyBlue: #e8f4ff;
-  --OutlineBlue: #1a91ff;
+  --OutlineBlue: #1a91ff
+  ;
 }
 
 .border-radius-50 {
@@ -154,37 +155,42 @@ input:checked + .radio-tile .logo path {
 
 /* ICON CONTAINER STYLING */
 
-.icon {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  align-items: center;
+.icon
+{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
+align-items: center;}
 
 .innerIcon-container {
-  gap: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-
+  gap: 1rem;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 91rem;
+  align-content: center;
+  padding: 2rem;
 }
 .icon-container {
-  width: 9rem;
+  width: 10rem;
   /* border-radius: 18px; */
   border: 0.1rem solid transparent;
   border-radius: 18px;
-  height: 9rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   transition: all 0.25s;
+  padding: 0.5rem;
 }
 
 .icon-container:hover {
   /* transition: 3s ease-in; */
   border-color: var(--Outlinegrey);
 }
+
 
 .icon-container-inner {
   display: flex;
@@ -205,7 +211,6 @@ input:checked + .radio-tile .logo path {
   align-items: center;
   justify-content: center;
   padding: 4px;
-  margin-bottom: 5px;
   height: 35px;
 }
 
@@ -226,7 +231,7 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 5px;
+  gap: 0.3rem;
   border: none;
 }
 
@@ -235,8 +240,8 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px 7px;
-  gap: 3px;
+  padding: 0.4rem 0.6rem;
+  gap: 0.3rem;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -252,8 +257,8 @@ input:checked + .radio-tile .logo path {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px 7px;
-  gap: 3px;
+  padding:0.4rem 0.6rem;
+  gap: 0.3rem;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -314,7 +319,6 @@ input:checked + .radio-tile .logo path {
   display: flex;
   cursor: pointer;
 }
-
 /* category container styling */
 
 .dropdown-categories select {
@@ -324,7 +328,6 @@ input:checked + .radio-tile .logo path {
   border-radius: 50px;
   appearance: none;
   height: 3rem;
-
   font-weight: 500;
   color: #3b3b3b;
   border: none;

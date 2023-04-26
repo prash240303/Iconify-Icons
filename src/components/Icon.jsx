@@ -91,11 +91,13 @@ export default function Icon({ iconName, category, size }) {
     }
 
     return (
-        <div className="  icon-container">
+        <div className="icon-container">
 
             <div className="icon-container-inner">
-                <img src={`./Icons/${category}/${iconName}_${sizeVariant}.svg`} alt="" className="display-icon" />
 
+                <div className="display-icon">
+                <img src={`./Icons/${category}/${iconName}_${sizeVariant}.svg`} alt="img"  />
+                </div>
                 <div className="icon-label-container">
 
 
