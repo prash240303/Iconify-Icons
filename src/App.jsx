@@ -5,6 +5,12 @@ import Icon from "./components/Icon";
 import Switchtoggle from "./components/SwitchToggle";
 import Categories from "./components/Categories";
 import StyleToggle from "./components/StyleToggle";
+import Hero from "./components/Hero";
+import Nav from "./components/nav";
+import "./components/Nav.css"
+import "./components/Icon.css"
+import "./components/Hero.css"
+
 export default function App() {
   const [size, setSize] = React.useState("3");
   const [category, setCategory] = React.useState("All");
@@ -74,6 +80,9 @@ export default function App() {
 
   return (
     <div className="main-parent">
+      <Nav/>
+      <Hero/>
+
       <div className="settings-control">
         <Categories handlecategory={handlecategoryChange} />
         <Switchtoggle handleSize={handleSizeChange} sizeValue={size} />

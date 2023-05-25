@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "list-react-files": "^0.2.0",
+    "paroller.js": "^1.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "require-context": "^1.1.0"

@@ -1,0 +1,136 @@
+.Hero-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  /* position: relative; */
+  width: fit-content;
+  margin: auto;
+}
+
+.floating-assets {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 20em;
+  top: 5em;
+}
+
+.common {
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cellar {
+  transform: rotate(6deg);
+
+  width: 200px;
+  height: 200px;
+  transform:translate3d(-90px, 100px, 0px);
+  background-image: url("/public/Assets/cellar.gif");
+  background-size: 70%;
+}
+
+.pay {
+  transform: rotate(18deg);
+
+  width: 130px;
+  height: 130px;
+  transform: translate3d(650px, 120px, 0px);
+  background-image: url("/public/Assets/pay-bitcoin.gif");
+  background-size: 70%;
+}
+.face {
+  transform: rotate(6deg);
+  transform: translate3d(245px, 40px, 0px);
+  background-image: url("/public/Assets/face-id.gif");
+  background-size: 70%;
+  width: 110px;
+  height: 110px;
+}
+.command {
+  transform: rotate(-7deg);
+
+  transform: translate3d(90px, -10px, 0px);
+  background-image: url("/public/Assets/command.gif");
+  background-size: 70%;
+  width: 110px;
+  height: 110px;
+}
+.fill {
+  transform: rotate(-14deg);
+  transform:  translate3d(450px, -12px, 0px);
+  width: 140px;
+  height: 140px;
+  background-image: url("/public/Assets/fill.gif");
+  background-size: 70%;
+}
+
+/* 
+   */
+
+.content {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+}
+
+.title-line-1 {
+  display: inline;
+  font-size: 72px;
+  font-weight: 800;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.title-line-1:hover {
+  font-size: 78px;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: #f2f2f2;
+  opacity: 0.01;
+  border-radius: 10px;
+  text-shadow: 4px 4px 50px rgb(0, 127, 224);
+  -webkit-text-stroke: 2px black;
+}
+
+.title-line-2 {
+  display: inline;
+  font-size: 64px;
+  font-weight: 800;
+  transition: all 0.2s ease 0s;
+  text-align: center;
+  /* color:aliceblue; */
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(151, 199, 240), #0ca7d2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-line-2:hover {
+  font-size: 70px;
+}
+ .desc {
+  text-align: center;
+    display: block;
+    max-width: 750px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+} 
+
+

@@ -1,20 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,500&family=Space+Grotesk:wght@300;400;500&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Karla:ital,wght@0,400;0,700;1,500&display=swap");
 
 body {
   margin: 0;
-  padding: 0;
-  /* font-family: "Inter", sans-serif; */
-  font-family: "Karla", sans-serif;
+  padding: 30px 50px 50px;  
 }
 
-:root {
+  :root {
   --Outlinegrey: #dddee2;
-  --OutlineLightBlue: #a9d3fa;
-  --OutlineGreyBlue: #e8f4ff;
-  --OutlineBlue: #1a91ff
-  ;
+  --OutlineLightBlue:#1a91ff26;
+  --OutlineGreyBlue: #e4f9ff;
+  --OutlineBlue: #1a91ff;
+  
 }
 
 .border-radius-50 {
@@ -153,172 +148,7 @@ input:checked + .radio-tile .logo path {
 
 /*media queries */
 
-/* ICON CONTAINER STYLING */
 
-.icon
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-align-items: center;}
-
-.innerIcon-container {
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 91rem;
-  align-content: center;
-  padding: 2rem;
-}
-.icon-container {
-  width: 10rem;
-  /* border-radius: 18px; */
-  border: 0.1rem solid transparent;
-  border-radius: 18px;
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  transition: all 0.25s;
-  padding: 0.5rem;
-}
-
-.icon-container:hover {
-  /* transition: 3s ease-in; */
-  border-color: var(--Outlinegrey);
-}
-
-
-.icon-container-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.display-icon {
-  display: inline-block;
-  background: #ffffff;
-  margin-bottom: 20px;
-  scale: 120%;
-}
-.icon-label-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  height: 35px;
-}
-
-.icon-name {
-  padding: 5px;
-  width: 121.46px;
-  /* overflow: hidden; */
-  text-align: center;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 500;
-
-  color: var(--OutlineBlue);
-}
-
-.icontiles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 0.3rem;
-  border: none;
-}
-
-.download--btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.4rem 0.6rem;
-  gap: 0.3rem;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  color: #4aa6fd;
-  appearance: none;
-  border: none;
-  background: #e8f4ff;
-  border-radius: 12px;
-}
-
-.copy--btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding:0.4rem 0.6rem;
-  gap: 0.3rem;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  color: #4aa6fd;
-  appearance: none;
-  border: none;
-  background: #e8f4ff;
-  border-radius: 12px;
-}
-
-.download--btn,
-.copy--btn:hover {
-  transition: 0.01s ease-in;
-  color: var(--OutlineBlue);
-}
-
-.download--btn:hover .download-icon path {
-  stroke: var(--OutlineBlue);
-}
-
-.copy--btn:hover .copy-icon path {
-  stroke: var(--OutlineBlue);
-}
-
-.download-icon,
-.copy-icon {
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  left: 12.5%;
-  right: 12.5%;
-  top: 12.5%;
-  bottom: 12.5%;
-  width: 14px;
-  height: 14px;
-}
-
-.download--btn {
-  display: none;
-}
-.copy--btn {
-  display: none;
-}
-
-.download--btn,
-.copy--btn:active {
-  outline: none;
-}
-
-.icon-container:hover .icon-name {
-  display: none;
-}
-.icon-container:hover .download--btn {
-  display: flex;
-  cursor: pointer;
-}
-.icon-container:hover .copy--btn {
-  display: flex;
-  cursor: pointer;
-}
 /* category container styling */
 
 .dropdown-categories select {
