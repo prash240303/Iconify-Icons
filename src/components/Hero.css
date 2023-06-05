@@ -6,7 +6,6 @@
 }
 
 .hero-content {
-  /* position: relative; */
   width: fit-content;
   margin: auto;
 }
@@ -76,8 +75,7 @@
   background-size: 70%;
 }
 
-/* 
-   */
+
 
 .content {
   display: flex;
@@ -144,9 +142,5 @@
   text-align: center;
   font-size: 18px;
   line-height: 29px;
-  /* Add the following properties to fix the shift */
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0; */
+
 }

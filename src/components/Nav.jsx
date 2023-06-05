@@ -8,7 +8,6 @@ export default function Nav()
         <div className="Logo-container"> 
 
             <img src="/Assets/Iconify.svg" alt="" className="Logo"/>
-           {/* <div className="logo-name">Iconify</div>    */}
         </div>
 
         <ul className="nav-menu">

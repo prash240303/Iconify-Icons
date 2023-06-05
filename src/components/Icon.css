@@ -79,24 +79,8 @@ align-items: center;}
   border: none;
 }
 
-.download--btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.4rem 0.6rem;
-  gap: 0.3rem;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  color: #4aa6fd;
-  appearance: none;
-  border: none;
-  background: var(--OutlineGreyBlue);
-  border-radius: 12px;
-}
 
-.copy--btn {
+.buttons{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,6 +96,10 @@ align-items: center;}
   background: var(--OutlineGreyBlue);
   border-radius: 12px;
 }
+
+
+
+
 
 .download--btn:hover,
 .copy--btn:hover {
@@ -148,7 +136,11 @@ align-items: center;}
   display: none;
 }
 
-.download--btn,
+.download--btn:active
+ {
+  outline: none;
+}
+
 .copy--btn:active {
   outline: none;
 }

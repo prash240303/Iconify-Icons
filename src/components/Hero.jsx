@@ -3,13 +3,14 @@ import React from "react";
 export default function Hero() {
 
   
+
+  //parallex effect for the floating icon gifs
   var elements = document.querySelectorAll('.parallax');
 
 document.addEventListener('mousemove', function(event) {
   var mouseX = event.clientX;
   var mouseY = event.clientY;
 
-  // Update position for each element based on mouse movements
   elements.forEach(function(element) {
     element.style.left = mouseX*0.1+ 'px';
     element.style.top = mouseY*0.1 + 'px';

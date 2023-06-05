@@ -1,24 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
-  padding: 30px 50px 50px;  
-  font-family: 'DM Sans', sans-serif;}
+  padding: 30px 50px 50px;
+  font-family: "DM Sans", sans-serif;
+}
 
-
-
-
-
-
-  :root {
+:root {
   --Outlinegrey: #dddee2;
   --OutlineLightBlue:#1a91ff26;
-  --OutlineGreyBlue: #e4f9ff;
+  --OutlineGreyBlue: #EAF5FE;
   --OutlineBlue: #1a91ff;
-  
 }
 
 .border-radius-50 {
@@ -72,10 +64,8 @@ body {
   width: 24px;
 }
 
-/*size switch toggle css
-*/
+/*size switch toggle css*/
 
-/**/
 
 .toggle-container {
   display: flex;
@@ -154,8 +144,6 @@ input:checked + .radio-tile label {
 input:checked + .radio-tile .logo path {
   stroke: var(--OutlineBlue) !important;
 }
-
-/*media queries */
 
 
 /* category container styling */
