@@ -78,6 +78,9 @@ export default function App() {
     setStyle(event.target.value);
   }
 
+
+ 
+
   return (
     <div className="main-parent">
       <Nav/>
@@ -102,6 +105,9 @@ export default function App() {
       </div>
       <div className=" icon">
         <div className="row innerIcon-container"> {Icons}</div></div>
+
+        <div id="snackbarCopy">Icon SVG copied !</div>
+        <div id="snackbarDown">Icon SVG downloaded !</div>
     </div>
   );
 }
