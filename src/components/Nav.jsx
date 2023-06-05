@@ -6,11 +6,13 @@ export default function Nav()
     <div className="Nav-main-container">
         
         <div className="Logo-container"> 
-            <img src="/Assets/iconoir-logo.svg" alt="" className="Logo"/>
+
+            <img src="/Assets/Iconify.svg" alt="" className="Logo"/>
+           {/* <div className="logo-name">Iconify</div>    */}
         </div>
 
         <ul className="nav-menu">
-            <li className="nav-menu-items"> <a href="">Icons</a> </li>
+            <li className="nav-menu-items"> <a href=""> Icons</a> </li>
             <li className="nav-menu-items"> <a href="">Documentation</a> </li>
             <li className="nav-menu-items"> <a href="https://twitter.com/prash2403">connect with me</a> </li>
         </ul>

@@ -8,6 +8,20 @@
 }
 
 .Logo-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.logo-name
+{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 59px;
+}
+
+.logo-icon
+{
 
 }
 
@@ -26,8 +40,7 @@
   list-style-type: none;
   text-decoration: none;
   cursor: pointer;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
   border-radius: 10px;
   color: black;
   transition: background 0.5s cubic-bezier(0, 0, 0.2, 1);
@@ -53,4 +66,5 @@
 }
 .nav-right a {
   text-decoration: none;
+  /* color:royalblue; */
 }

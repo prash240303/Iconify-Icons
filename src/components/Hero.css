@@ -37,7 +37,7 @@
   width: 200px;
   height: 200px;
   transform:translate3d(-90px, 100px, 0px);
-  background-image: url("/public/Assets/cellar.gif");
+  background-image: url("/Assets/cellar.gif");
   background-size: 70%;
 }
 
@@ -47,13 +47,13 @@
   width: 130px;
   height: 130px;
   transform: translate3d(650px, 120px, 0px);
-  background-image: url("/public/Assets/pay-bitcoin.gif");
+  background-image: url("/Assets/pay-bitcoin.gif");
   background-size: 70%;
 }
 .face {
   transform: rotate(6deg);
   transform: translate3d(245px, 40px, 0px);
-  background-image: url("/public/Assets/face-id.gif");
+  background-image: url("/Assets/face-id.gif");
   background-size: 70%;
   width: 110px;
   height: 110px;
@@ -62,7 +62,7 @@
   transform: rotate(-7deg);
 
   transform: translate3d(90px, -10px, 0px);
-  background-image: url("/public/Assets/command.gif");
+  background-image: url("/Assets/command.gif");
   background-size: 70%;
   width: 110px;
   height: 110px;
@@ -72,7 +72,7 @@
   transform:  translate3d(450px, -12px, 0px);
   width: 140px;
   height: 140px;
-  background-image: url("/public/Assets/fill.gif");
+  background-image: url("/Assets/fill.gif");
   background-size: 70%;
 }
 
@@ -83,6 +83,8 @@
   display: flex;
   margin-top: 200px;
   flex-direction: column;
+  position: relative;
+  
 }
 
 .title-line-1 {
@@ -92,6 +94,7 @@
   transition: all 0.3s ease 0s;
   text-align: center;
   line-height: 0.9;
+
 }
 
 .title-line-1:hover {
