@@ -50,16 +50,19 @@ align-items: center;
 
 }
 
-a:link { text-decoration: none; }
+.nav-menu-items a :link { text-decoration: none; }
 
 
-a:visited { text-decoration: none; }
+
+.nav-menu-items a :visited { text-decoration: none; }
 
 
-a:hover { text-decoration: none; }
+
+.nav-menu-items a :hover { text-decoration: none; }
 
 
-a:active { text-decoration: none; }
+
+.nav-menu-items a :active { text-decoration: none; }
 
 
 .nav-menu-items:hover {
