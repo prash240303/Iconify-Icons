@@ -90,6 +90,7 @@
 .title-line-1 {
   display: inline;
   font-size: 72px;
+  height: 70px;
   font-weight: 800;
   transition: all 0.3s ease 0s;
   text-align: center;
@@ -113,33 +114,38 @@
 .title-line-2 {
   display: inline;
   font-size: 64px;
+  width: 1000px;
+  height: 80px;
   font-weight: 800;
   transition: all 0.2s ease 0s;
   text-align: center;
-  /* color:aliceblue; */
   font-size: 72px;
   background: linear-gradient(rgb(151, 199, 240), #0ca7d2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  box-sizing: border-box;
   text-fill-color: transparent;
-  /* background: linear-gradient(rgb(151, 199, 240), #0ca7d2);
-  background-clip: text;
-  text-fill-color: transparent; */
-  
+  position: relative;
 }
 
 .title-line-2:hover {
   font-size: 70px;
+  box-sizing: border-box;
 }
- .desc {
+.desc {
+  position: relative;
+  box-sizing: border-box;
   text-align: center;
-    display: block;
-    max-width: 750px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 29px;
-} 
-
-
+  display: block;
+  max-width: 900px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 29px;
+  /* Add the following properties to fix the shift */
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0; */
+}
