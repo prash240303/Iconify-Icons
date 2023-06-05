@@ -43,6 +43,8 @@ body {
   background: #ffffff;
   outline: 0.1rem solid var(--Outlinegrey);
   overflow: hidden;
+  border-radius: 50px;
+  
 }
 
 .search-input {

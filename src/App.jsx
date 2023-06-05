@@ -89,7 +89,7 @@ export default function App() {
       <div className="settings-control">
         <Categories handlecategory={handlecategoryChange} />
         <Switchtoggle handleSize={handleSizeChange} sizeValue={size} />
-        <div className="search-bar border-radius-50">
+        <div className="search-bar ">
           <img src="./Assets/search.svg" />
           <div className="search-input">
             <input
