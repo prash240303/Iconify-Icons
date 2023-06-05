@@ -119,8 +119,13 @@
   /* color:aliceblue; */
   font-size: 72px;
   background: linear-gradient(rgb(151, 199, 240), #0ca7d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  /* background: linear-gradient(rgb(151, 199, 240), #0ca7d2);
+  background-clip: text;
+  text-fill-color: transparent; */
   
 }
 
