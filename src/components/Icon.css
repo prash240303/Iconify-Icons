@@ -145,6 +145,12 @@ align-items: center;}
   outline: none;
 }
 
+
+.buttons:focus{
+  outline: none;
+}
+
+
 .icon-container:hover .icon-name {
   display: none;
 }
