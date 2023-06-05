@@ -6,7 +6,7 @@ import Switchtoggle from "./components/SwitchToggle";
 import Categories from "./components/Categories";
 import StyleToggle from "./components/StyleToggle";
 import Hero from "./components/Hero";
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 import "./components/Nav.css"
 import "./components/Icon.css"
 import "./components/Hero.css"
