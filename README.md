@@ -2,6 +2,7 @@
 
 
 Iconify Icons is a collection of high-quality, customizable icons for use in web and mobile applications. This repository serves as the central hub for accessing and using the Iconify Icons library.
+![Cover](https://github.com/prash240303/Iconify-Icons/assets/93905743/9fdebc0b-a7a3-4170-a45e-30ef2f4c4f78)
 
 Live App
 Check out the live app here to explore and use the icons.
