@@ -1,6 +1,5 @@
-# iconwebsite
-Iconify Icons
-Iconify Icons
+# Iconify Icons
+
 
 Iconify Icons is a collection of high-quality, customizable icons for use in web and mobile applications. This repository serves as the central hub for accessing and using the Iconify Icons library.
 
