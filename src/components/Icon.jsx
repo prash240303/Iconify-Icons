@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 
 
-export default function Icon({ iconName, category, size }) {
+export default function Icon({ iconName, category, size  }) {
     let sizeVariant
     if (size == 1) {
         sizeVariant = "small"

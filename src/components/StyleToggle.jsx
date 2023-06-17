@@ -32,8 +32,8 @@ export default function StyleToggle({ handleStyle, styleValue }) {
                         id="large"
                         type="radio"
                         name="radio"
-                        value="3"
-                        checked={true && styleValue === "3"}
+                        value="2"
+                        checked={true && styleValue === "2"}
 
                         onClick={handleStyle}
                     />

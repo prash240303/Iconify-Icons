@@ -136,13 +136,13 @@ export default [
     {
         name: "pdf",
         category: "communication",
-        tags: ["print", 'document'], style: "solid"
+        tags: ["print", 'document'], style: "outline"
 
     },
     {
         name: "forward mail",
         category: "communication",
-        tags: ["print", 'document'], style: "solid"
+        tags: ["print", 'document'], style: "outline"
 
     },
     {
@@ -154,7 +154,7 @@ export default [
     {
         name: "incoming",
         category: "School",
-        tags: ["print", 'document'], style: "solid"
+        tags: ["print", 'document'], style: "outline"
 
     },
     {

@@ -11,6 +11,10 @@ body {
   --OutlineLightBlue:#1a91ff26;
   --OutlineGreyBlue: #EAF5FE;
   --OutlineBlue: #1a91ff;
+
+  --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
 }
 
 .border-radius-50 {
@@ -174,3 +178,12 @@ input:checked + .radio-tile .logo path {
   font-size: 1rem;
   font-weight: 400;
 }
+
+/* bottom end footer text*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
