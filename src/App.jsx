@@ -4,14 +4,11 @@ import IconData from "./IconData";
 import Icon from "./components/Icon";
 import Switchtoggle from "./components/SwitchToggle";
 import Categories from "./components/Categories";
-// import StyleToggle from "./components/StyleToggle";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-// import Footer from "./components/footer";
 import "./components/Nav.css"
 import "./components/Icon.css"
 import "./components/Hero.css"
-// import "./components/Footer.css"
 
 
 
@@ -20,10 +17,8 @@ export default function App() {
   const [category, setCategory] = React.useState("All");
   const [iconInfo, setIconInfo] = React.useState(IconData);
   const [search, setSearch] = React.useState("");
-  // console.log(search);
 
 
-  //search filter 
   function filterByCategory(item) {
     if (category === "All") {
       return item;
@@ -47,16 +42,9 @@ export default function App() {
 
 
 
-  // // style state change
-  // const [style, setStyle] = React.useState("2");
-  // useEffect(() => {
-  //   console.log("style is changed");
-  //   console.log("the new  style : " + style);
-  // }, [style]);
+  
 
 
-    //category filter
-  //  const queryData = IconData.filter(filterBySearch)
   const filteredData = queryData.filter(filterByCategory);
   const Icons = filteredData.map((item, index) => {
     return (
@@ -65,7 +53,6 @@ export default function App() {
         iconName={item.name}
         category={item.category}
         size={size}
-        // iconStyle={style}
       />
     );
   });
@@ -81,13 +68,9 @@ export default function App() {
   }
 
   function handleSearchQuery(event) {
-    // console.log(event.target.value)
     setSearch(event.target.value);
   }
 
-  // function handleStyleChange(event) {
-  //   setStyle(event.target.value);
-  // }
   let index = 0,
   interval = 1000;
 
@@ -121,7 +104,6 @@ setTimeout(() => {
       <div className="settings-control">
         <Categories handlecategory={handlecategoryChange} />
         <Switchtoggle handleSize={handleSizeChange} sizeValue={size} />
-        {/* <StyleToggle handleStyle={handleStyleChange} styleValue={style}/> */}
         <div className="search-bar ">
           <img src="./Assets/search.svg" />
           <div className="search-input">
@@ -142,7 +124,6 @@ setTimeout(() => {
         <div id="snackbarCopy">Icon SVG copied !</div>
         <div id="snackbarDown">Icon SVG downloaded !</div>
 
-    {/* <Footer/> */}
 
     <h1>
     Thank you for visiting this project  <span class="magic">
