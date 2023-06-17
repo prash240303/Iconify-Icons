@@ -14,9 +14,13 @@ body {
   --OutlineGreyBlue: #EAF5FE;
   --OutlineBlue: #1a91ff;
 
-  --purple: rgb(123, 31, 162);
+  --purple: rgb(149, 38, 197);
     --violet: rgb(103, 58, 183);
     --pink: rgb(244, 143, 177);
+    --light-blue : #656BF3 ; 
+    --blue:#6A3DF1 ;
+    --light-puprle:#7E42EE;
+    --light-pink:#8545EE;
 }
 
 .border-radius-50 {
@@ -264,7 +268,7 @@ h1 > .magic > .magic-text {
     var(--purple)
   );
   background-size: 200%;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }

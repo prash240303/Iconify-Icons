@@ -118,12 +118,22 @@
   transition: all 0.2s ease 0s;
   text-align: center;
   font-size: 72px;
-  background: linear-gradient(rgb(151, 199, 240), #0ca7d2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--light-puprle),
+    var(--violet),
+    var(--light-pink),
+    var(--pink),
+    var( --light-puprle),    var(--purple)
+
+  );
+  background-size: 200%;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
   box-sizing: border-box;
-  text-fill-color: transparent;
   position: relative;
 }
 
