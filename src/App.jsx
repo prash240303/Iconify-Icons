@@ -164,8 +164,6 @@ setTimeout(() => {
     <span class="magic-text"> more improvements and updates comming sooon : ) </span>
   </span>
 </h1>
-
-  
 </div>   
     
   );
