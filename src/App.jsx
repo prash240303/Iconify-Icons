@@ -7,11 +7,11 @@ import Categories from "./components/Categories";
 // import StyleToggle from "./components/StyleToggle";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 import "./components/Nav.css"
 import "./components/Icon.css"
 import "./components/Hero.css"
-import "./components/Footer.css"
+// import "./components/Footer.css"
 
 
 
